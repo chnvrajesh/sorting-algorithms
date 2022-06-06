@@ -1,5 +1,14 @@
 package com.nvrviews.selectionsort;
 
+/**
+ *  1. This sorting technique sorts an array by repeatedly finding the minimum element (considering ascending order)
+ *      from unsorted part and putting it at the beginning
+ *  2. Ex: 4, 1, 3, 2
+ *      a. 4, 1, 3, 2 => 1, 4, 3, 2
+ *      b. 1, 4, 3, 2 => 1, 2, 3, 4
+ *  3. Time complexity O(n2)
+ */
+
 import com.nvrviews.bubblesort.SortOrder;
 
 import java.util.Arrays;

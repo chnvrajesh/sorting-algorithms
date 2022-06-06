@@ -1,5 +1,16 @@
 package com.nvrviews.bubblesort;
 
+/**
+ *  1. This sorting will work by repeatedly swapping adjacent elements if they are in wrong order
+ *  2. Ex: 4, 1, 3, 2
+ *      a. 4, 1, 3, 2 => 1, 4, 3, 2
+ *      b. 1, 4, 3, 2 => 1, 3, 4, 2
+ *      c. 1, 3, 4, 2 => 1, 3, 2, 4
+ *      d. 1, 3, 2, 4 => 1, 3, 2, 4
+ *      e. 1, 3, 2, 4 => 1, 2, 3, 4
+ *  3. Time complexity O(n2)
+ */
+
 import java.util.Arrays;
 
 public class BubbleSortDemo {
@@ -10,8 +21,6 @@ public class BubbleSortDemo {
         System.out.println(Arrays.toString(arr));
         System.out.println("Descending Order: " + Arrays.toString(bubbleSort.sort(arr, "DSC")));
         System.out.println("Ascending Order: " + Arrays.toString(bubbleSort.sort(arr, "ASC")));
-
-        //Arrays.stream(bubbleSort.sort(arr)).forEach(System.out::print);
     }
 
     public int[] sort(int[] array, String order){
